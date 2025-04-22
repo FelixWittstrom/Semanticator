@@ -1,9 +1,17 @@
-#' Compare word vector to sentiment word list
+#' compare_words
+#'
+#' This function compares a word vector to sentiment word list
+#' The word vector can be created from a .txt document using the preprocess_text function
+#' The sentiment word list has to be specified
 #'
 #' @param word_vector Vector of words from the document
-#' @param sentiment_words Vector of words (can include * for wildcard suffix)
+#' @param sentiment_words Vector of words (can include * for suffix or prefix)
 #' @return Number of matches found in the text
-#' @export
+#' @examples
+#' # Define word lists
+#' positive_words <- c("hope", "cooperat*", "pass*")
+#' negative_words <- c("nause*", "tired", "heavy", "frustrat*", "fatigue", "restless", "trapped")
+#'
 compare_words <- function(word_vector, sentiment_words) {
   match_count <- 0
 
