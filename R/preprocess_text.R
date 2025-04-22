@@ -4,7 +4,9 @@
 #'
 #' @param filepath Absolute path to the text file
 #' @return A vector of lowercase, punctuation-free words
-#' @export
+#' @examples
+#' # words <- preprocess_text("filepath.../Example_negative.txt")
+#' head(words)
 preprocess_text <- function(filepath) {
   # Read the whole file as one string
   text <- paste(readLines(filepath, warn = FALSE), collapse = " ")
