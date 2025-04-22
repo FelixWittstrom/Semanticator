@@ -1,4 +1,6 @@
-#' Preprocess text from a .txt file
+#' preprocess_text
+#'
+#' This function preprocesses text for the Semanticator package, using a .txt file as input
 #'
 #' @param filepath Absolute path to the text file
 #' @return A vector of lowercase, punctuation-free words
